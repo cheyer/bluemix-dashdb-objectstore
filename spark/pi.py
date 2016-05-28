@@ -25,9 +25,9 @@ credentialsDDB = {
 
 ### TODO ###
 # change the tablename 
-tablename = ".MYTABLE";
+tablename = "MYTABLE";
 url = credentialsDDB["jdbcurl"]+":user="+credentials_1["username"]+";password="+credentials_1["password"]+";";
-table = credentialsDDB["username"]+tablename;
+table = credentialsDDB["username"]+"."+tablename;
 
 # create Spark SQLContext with JDBC URL
 df = sqlContext.read.format('jdbc').options(url=url, dbtable=table).load()
