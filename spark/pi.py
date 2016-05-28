@@ -38,10 +38,15 @@ df.registerTempTable("simdata")
 # get all rows in table simdata
 df = sqlContext.sql("SELECT * FROM simdata")
 
+# test: print out first 5 elements and number of rows
+print(df.head())
+print(df.count())
+
 ### TODO ###
 # paste the credentials of Object Store
+# check that there is an attribute "name" with the value "spark in the credentials, else add
 oscredentials = {
-    "name": "",
+    "name": "spark",
     "auth_url": "",
     "project": "",
     "projectId": "",
