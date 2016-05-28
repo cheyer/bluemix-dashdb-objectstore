@@ -1,2 +1,3 @@
-* * * * * root /script.sh
+*/10 * * * * root /spark/spark-submit.sh --deploy-mode cluster --vcap /spark/vcap.json /spark/pi.py
+*/10 * * * * root /spark/script.sh
 # An empty line is required at the end of this file for a valid cron file.
