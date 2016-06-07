@@ -5,7 +5,7 @@ If you're looking for a simple docker container that runs a cron invoking a shel
 https://github.com/cheyer/docker-cron
 
 ## how to install and use it
-First copy the repository. Insert your DashDB credentials in the file *spark/vcap.json*. 
+First copy the repository. Insert your Spark credentials in the file *spark/vcap.json*. (you may first need to create service credentials in the Spark dashboard).
 
 Open the *spark/pi.py* file that is executed by spark-submit.sh. Edit the following:
 
